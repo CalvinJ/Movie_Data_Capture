@@ -1,0 +1,67 @@
+[
+    {
+        "domain": "javdb.com",
+        "expirationDate": 1719320216.754753,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "list_mode",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": "0",
+        "value": "h"
+    },
+    {
+        "domain": "javdb.com",
+        "expirationDate": 1719320216.754815,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "theme",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": "0",
+        "value": "auto"
+    },
+    {
+        "domain": "javdb.com",
+        "expirationDate": 1741446331.024374,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "locale",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": "0",
+        "value": "zh"
+    },
+    {
+        "domain": "javdb.com",
+        "expirationDate": 1716382623.049722,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "over18",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": "0",
+        "value": "1"
+    },
+    {
+        "domain": "javdb.com",
+        "expirationDate": 1708182331.024454,
+        "hostOnly": true,
+        "httpOnly": true,
+        "name": "_jdb_session",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": "0",
+        "value": "BBSP9%2Bdqw2kdzAMjR5SMxYqdZFmGPaJwIKkooQngOsCYtgaVdtXuFyj1kMrMn78jP2eu%2BAeLlLb1YgPSjnm2BThAaEQU%2BdKQTTSlHcHKYJoScMuK87LLhn7j2VCr8jLhvCLAKZXveCCDBd1Be553buv4d3iCqdIUT0NSYfL2Vx2iVrtD7CsNtCIp1%2Ff%2FfmHOfG22a%2F%2BTsRn6ffSrJit1zzPaePEz3rARAkthoNT%2FZP4QVcATJ45yEu2qGKulrXRBXw5lmHw5hacAaLnldmgfXYFZlT0G%2BjGcIT1tvXN8MBCEkVJNkWKUqzIfoz3Ba4NB6P5XTtgEIvM6kG%2F5UWDh7PvVc17Ppkf9jx9qVuGuGU%2FAzC2NXvp8Z0Ize4vbEQ%3D%3D--rwMdJK8PYTNiFhVz--P4AN%2B7ocoRc8bHzkqUDY8A%3D%3D"
+    }
+]

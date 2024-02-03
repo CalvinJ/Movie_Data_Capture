@@ -174,11 +174,13 @@ def getUncensored(html):
 def main(number):
     # javdb更新后同一时间只能登录一个数字站，最新登录站会踢出旧的登录，因此按找到的第一个javdb*.json文件选择站点，
     # 如果无.json文件或者超过有效期，则随机选择一个站点。
-    javdb_sites = config.getInstance().javdb_sites().split(',')
+    number_sites = config.getInstance().javdb_sites().split(',')
     debug = config.getInstance().debug()
-    for i in javdb_sites:
-        javdb_sites[javdb_sites.index(i)] = "javdb" + i
-    javdb_sites.append("javdb")
+    javdb_sites = set()
+    for i in number_sites:
+        javdb_sites.add("javdb" + i)
+    javdb_sites.add("javdb")
+    javdb_sites = list(javdb_sites)
     try:
         # if re.search(r'[a-zA-Z]+\.\d{2}\.\d{2}\.\d{2}', number).group():
         #     pass
@@ -192,6 +194,7 @@ def main(number):
             javdb_site = cj
             cookie_json = javdb_site + '.json'
             cookies_dict, cookies_filepath = load_cookies(cookie_json)
+            cookies_dict = {x['name']: x['value'] for x in cookies_dict}
             if isinstance(cookies_dict, dict) and isinstance(cookies_filepath, str):
                 cdays = file_modification_days(cookies_filepath)
                 if cdays < 7:

@@ -165,7 +165,8 @@ def main(number):
     try:
         try:
             htmlcode = get_html('https://cn.airav.wiki/video/' + number)
-            javbus_json = json.loads(javbus.main(number))
+            # javbus_json = json.loads(javbus.main(number))
+            javbus_json = json.loads('{}')
 
         except:
             print(number)
