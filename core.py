@@ -743,6 +743,12 @@ def core_main_no_net_op(movie_path, number):
         hack = 1
         hack_word = "-hack"
 
+    if '-UC' in str(movie_path).upper() or '-CU' in str(movie_path).upper():
+        hack = 1
+        hack_word = '-hack'
+        cn_sub = '1'
+        c_word = '-C'
+
     prestr = f"{number}{leak_word}{c_word}{hack_word}"
     full_nfo = Path(path) / f"{prestr}{part}.nfo"
     if full_nfo.is_file():
