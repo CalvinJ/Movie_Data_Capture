@@ -831,9 +831,15 @@ def core_main(movie_path, number_th, oCC):
     else:
         leak = 0
 
-    if 'hack'.upper() in str(movie_path).upper() or '破解' in movie_path:
+    if 'hack'.upper() in str(movie_path).upper() or '破解' in movie_path or '-U' in str(movie_path).upper():
         hack = 1
         hack_word = "-hack"
+
+    if '-UC' in str(movie_path).upper() or '-CU' in str(movie_path).upper():
+        hack = 1
+        hack_word = '-hack'
+        cn_sub = '1'
+        c_word = '-C'
 
     # 调试模式检测
     if conf.debug():
